@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* Recruitment section added to the existing Tanagokoro top page. */
+#home_recruit_area{--r-green:#b7ce0f;--r-dark:#6f8c19;--r-pink:#dd58a1;--r-yellow:#f2c433;--r-ink:#30322d;--r-muted:#6c6f65;--r-pale:#f7fae8;--r-line:#e0e5cd;position:relative;overflow:hidden;padding:120px 24px;background:linear-gradient(180deg,#fff 0,#fff 310px,#fbfaf5 310px,#fbfaf5 100%);color:var(--r-ink)}
+#home_recruit_area:before,#home_recruit_area:after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+#home_recruit_area:before{width:270px;height:270px;top:-150px;left:-110px;border:38px solid rgba(183,206,15,.16)}
+#home_recruit_area:after{width:210px;height:210px;right:-120px;bottom:300px;background:rgba(221,88,161,.08)}
+.recruit-shell{position:relative;z-index:1;width:min(1060px,100%);margin:0 auto}
+.recruit-title{text-align:center;margin-bottom:65px}
+.recruit-en{margin:0 0 3px;color:var(--r-dark);font-family:Georgia,"Times New Roman",serif;font-size:17px;font-weight:bold;letter-spacing:.18em;text-transform:uppercase}
+.recruit-title h2{display:inline-block;position:relative;margin:0 0 26px;padding:0 40px 18px;font-size:42px;letter-spacing:.08em}
+.recruit-title h2:after{content:"";position:absolute;width:82px;height:5px;left:50%;bottom:0;transform:translateX(-50%);background:linear-gradient(90deg,var(--r-pink) 50%,var(--r-yellow) 50%)}
+.recruit-title>p:last-child{margin:0;color:var(--r-muted);font-size:17px;line-height:2.1}
+
+.recruit-job{margin:0 0 34px;overflow:hidden;background:#fff;border:1px solid var(--r-line);border-radius:18px;box-shadow:0 14px 42px rgba(74,84,42,.09)}
+.recruit-job-head{display:flex;align-items:center;gap:28px;padding:30px 40px;background:var(--r-pale);border-bottom:1px solid #dde7b8}
+.recruit-no{flex:none;color:var(--r-green);font:700 50px/1 Georgia,serif}
+.recruit-type{display:block;margin:0 0 3px;color:var(--r-pink);font-size:13px;font-weight:bold;letter-spacing:.15em}
+.recruit-job-head h3{margin:0;color:var(--r-ink);font-size:27px;line-height:1.45}
+.recruit-table{margin:0;padding:22px 40px}
+.recruit-table>div{display:grid;grid-template-columns:180px 1fr;gap:25px;padding:16px 0;border-bottom:1px dashed #d7dacd}
+.recruit-table>div:last-child{border-bottom:0}
+.recruit-table dt{color:var(--r-dark);font-weight:bold}
+.recruit-table dd{margin:0;color:var(--r-ink)}
+.recruit-table strong{color:var(--r-pink);font-size:20px}
+.recruit-allowances{margin:0 40px 38px;padding:20px 24px;background:#fff8e6;border-left:5px solid var(--r-yellow)}
+.recruit-allowances ul{display:flex;flex-wrap:wrap;gap:8px;margin:11px 0 0;padding:0;list-style:none}
+.recruit-allowances li,.recruit-allowances li:nth-of-type(2){padding:5px 13px;background:#fff;border:1px solid #ecd48b;border-radius:100px;font-size:13px}
+.recruit-job-conditions{margin:0 40px 38px;padding:23px 25px;background:#f7fae8;border-radius:10px}
+.recruit-job-conditions h4{margin:0 0 13px;color:var(--r-dark);font-size:16px}
+.recruit-job-conditions ul{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.recruit-job-conditions li,.recruit-job-conditions li:nth-of-type(2){position:relative;padding:0 0 0 23px;border:0;color:var(--r-muted);font-size:14px;line-height:1.75}
+.recruit-job-conditions li:before{content:"✓";position:absolute;left:0;color:var(--r-yellow);font-weight:bold}
+
+.recruit-common{margin:55px 0 90px;padding:38px 45px;color:#fff;background:#789521;border-radius:18px;box-shadow:0 14px 36px rgba(83,106,29,.18)}
+.recruit-common-head{display:flex;align-items:baseline;gap:18px;margin-bottom:20px}
+.recruit-common-head span{color:#e8efc4;font:700 15px Georgia,serif;letter-spacing:.15em}
+.recruit-common h3{margin:0;font-size:26px}
+.recruit-common ul{display:grid;gap:11px;margin:0;padding:0;list-style:none}
+.recruit-common li,.recruit-common li:nth-of-type(2){position:relative;padding:0 0 0 27px;border:0}
+.recruit-common li:before{content:"✓";position:absolute;left:0;color:var(--r-yellow);font-weight:bold}
+
+.recruit-message{margin:0 0 100px;padding:50px 56px;background:#fff;border-left:7px solid var(--r-green);box-shadow:0 16px 46px rgba(74,84,42,.09)}
+.recruit-message>div{max-width:850px;margin:0 auto}
+.recruit-message h3{margin:0 0 22px;font-size:29px;line-height:1.5}
+.recruit-message p:not(.recruit-en){margin:0 0 12px;color:var(--r-muted);font-size:15px;line-height:1.95}
+
+.recruit-contact{display:grid;grid-template-columns:38% 62%;overflow:hidden;background:var(--r-pale);border-radius:20px;box-shadow:0 18px 50px rgba(74,84,42,.12)}
+.recruit-contact-intro{padding:52px 38px;background:linear-gradient(145deg,#f7fae8,#edf5c9)}
+.recruit-contact-intro h3{margin:0 0 20px;font-size:31px;line-height:1.5}
+.recruit-contact-intro>p:not(.recruit-en){color:var(--r-muted);line-height:1.8}
+.recruit-phone{margin-top:30px;padding:19px 20px;background:#fff;border-radius:10px;box-shadow:0 9px 24px rgba(74,84,42,.08)}
+.recruit-phone span,.recruit-phone small{display:block;color:var(--r-muted);font-size:12px}
+#home_recruit_area .recruit-phone a{display:block;color:var(--r-pink);font:700 27px/1.4 Georgia,serif;text-decoration:none}
+.recruit-form{padding:48px 50px;background:#fff}
+.recruit-field{margin:0 0 23px}
+.recruit-field label{display:block;margin:0 0 7px;font-weight:bold}
+.recruit-field label span,.recruit-field label em{display:inline-block;margin-left:7px;padding:1px 8px;color:#fff;background:var(--r-pink);border-radius:3px;font-size:11px;font-style:normal;vertical-align:2px}
+.recruit-field label em{color:var(--r-muted);background:#e8e9e3}
+.recruit-field small{display:block;margin:-3px 0 7px;color:var(--r-muted);font-size:12px}
+.recruit-field input,.recruit-field textarea{box-sizing:border-box;width:100%;padding:13px 15px;color:var(--r-ink);background:#fdfdfb;border:1px solid #cdd2bf;border-radius:7px;font:inherit;line-height:1.5;transition:.2s}
+.recruit-field textarea{min-height:170px;resize:vertical}
+.recruit-field input:focus,.recruit-field textarea:focus{outline:0;border-color:var(--r-green);box-shadow:0 0 0 4px rgba(183,206,15,.18)}
+.recruit-honeypot{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(1px,1px,1px,1px)}
+.recruit-privacy{color:var(--r-muted);font-size:12px;line-height:1.8}
+.recruit-form button{width:100%;min-height:58px;padding:12px 20px;color:#fff;background:var(--r-green);border:0;border-radius:100px;font:700 16px inherit;letter-spacing:.04em;cursor:pointer;box-shadow:0 9px 22px rgba(183,206,15,.28);transition:.2s}
+.recruit-form button:hover{background:var(--r-dark);transform:translateY(-2px)}
+
+.recruit-result-page{box-sizing:border-box;min-height:100vh;display:grid;place-items:center;padding:40px 20px;background:#f7fae8;color:#30322d;font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
+.recruit-result-card{box-sizing:border-box;width:min(680px,100%);padding:52px 42px;background:#fff;border-radius:20px;box-shadow:0 16px 44px rgba(63,74,37,.1);text-align:center}
+.recruit-result-card>img{width:300px;height:105px;margin:0 auto 25px;object-fit:contain}
+.recruit-result-card h1{margin:0 0 20px;font-size:38px;line-height:1.5}
+.recruit-result-card>p:not(.recruit-en){color:#6c6f65;line-height:1.9}
+#home_recruit_area a.recruit-result-button,.recruit-result-button{display:inline-flex;align-items:center;justify-content:center;min-height:54px;margin-top:20px;padding:7px 28px;color:#fff!important;background:#b7ce0f;border-radius:100px;text-decoration:none;font-weight:bold}
+
+@media screen and (max-width:767px){
+  #home_recruit_area{padding:75px 16px;background:linear-gradient(180deg,#fff 0,#fff 230px,#fbfaf5 230px,#fbfaf5 100%)}
+  .recruit-title{margin-bottom:45px}.recruit-title h2{padding:0 10px 15px;font-size:31px}.recruit-title>p:last-child{font-size:15px;line-height:1.9}
+  .recruit-job-head{align-items:flex-start;gap:15px;padding:23px 20px}.recruit-no{font-size:38px}.recruit-job-head h3{font-size:20px}
+  .recruit-table{padding:14px 20px 20px}.recruit-table>div{grid-template-columns:1fr;gap:2px;padding:13px 0}.recruit-table strong{font-size:18px}
+  .recruit-allowances{margin:0 20px 25px;padding:18px}.recruit-allowances ul{display:grid}.recruit-allowances li{font-size:12px}
+  .recruit-job-conditions{margin:0 20px 25px;padding:19px 18px}.recruit-job-conditions li{font-size:13px}
+  .recruit-common{margin:40px 0 65px;padding:28px 22px}.recruit-common-head{display:block}.recruit-common-head h3{margin-top:4px;font-size:22px}.recruit-common li{font-size:14px;line-height:1.8}
+  .recruit-message{margin-bottom:65px;padding:31px 23px;border-left-width:5px}.recruit-message h3{font-size:23px}
+  .recruit-contact{grid-template-columns:1fr}.recruit-contact-intro{padding:35px 23px}.recruit-contact-intro h3{font-size:25px}.recruit-form{padding:33px 21px}.recruit-phone{margin-top:22px}.recruit-field{margin-bottom:21px}
+  .recruit-result-card{padding:38px 22px}.recruit-result-card>img{width:240px;height:90px}.recruit-result-card h1{font-size:28px}
+}
