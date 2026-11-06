@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="description" content="たなごころ相談支援事業所。「地域で暮らす」を一緒に支える相談支援。暮らしの困りごとに寄り添い、必要な支援につなげます。">
+<title>たなごころ相談支援事業所</title>
+<link rel="icon" type="image/png" href="https://www.sakae-kai.jp/favicon.png" sizes="32x32">
+<style>
+@charset "UTF-8";
+/* ---- 参照サイト(sakae-kai.jp)のCSS値をそのまま踏襲 ---- */
+a:link,a:visited,a:hover{color:#fff;text-decoration:none}
+br.sp{display:none}
+body{
+	-webkit-text-size-adjust:100%;margin:0;padding:0;background-color:#fff;color:#222;
+	font-family:"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","BIZ UDPGothic",Meiryo,sans-serif;
+}
+
+/* header */
+body>header{max-width:2000px;height:105px;margin:0 auto 20px;position:relative}
+body>header h1{display:flex;align-items:center;margin:0;position:absolute;top:5px;left:40px}
+body>header h1 p{font-size:24px;line-height:1.2;color:#b7ce0f;margin:0 0 0 7px}
+body>header h1 span{font-size:14px;color:#dd58a1}
+body>header h1 img{width:100px}
+body>header nav ul{
+	margin:0;padding:0;display:flex;list-style-type:none;text-align:center;font-size:18px;font-weight:800;line-height:1;
+	background-color:#b7ce0f;position:absolute;top:0;right:0;
+}
+body>header nav ul li{width:160px;height:105px;display:flex;align-items:center;justify-content:center}
+body>header nav ul li:nth-of-type(2){background-color:#dd58a1}
+body>header nav ul li:nth-of-type(3){background-color:#f2c433}
+body>header nav ul li a{display:flex;width:100%;height:100%;align-items:center;justify-content:center}
+
+/* key */
+#home_key_area{max-width:1600px;margin:0 auto;display:flex;padding:0 60px}
+#home_key_area img{width:65%;height:auto;align-self:flex-start}
+#home_key_area div{width:35%;box-sizing:border-box;padding:20% 0 0 2%}
+#home_key_area div p{display:inline-block;font-size:30px;font-weight:800;color:#fff;margin:0 0 20px;padding:12px;white-space:nowrap}
+#home_key_area>div p:first-of-type{background-color:#dd58a1}
+#home_key_area>div p:last-of-type{background-color:#f2c433}
+
+/* intro */
+#home_intro_area{margin:0 auto;padding:0 60px 200px}
+#home_intro_area p{margin:0;line-height:3;text-align:center;font-size:16px;text-decoration:underline 3px dashed #b7ce0f;text-underline-offset:8px}
+
+/* 共通 見出し */
+h2.ttl{margin:0 0 40px;text-align:center;font-weight:600;color:#b7ce0f;font-size:30px}
+h2.ttl span{display:block;font-size:14px;font-weight:500;color:#f2c433}
+
+/* about (サイトの #home_care_area / #home_message_area 相当) */
+#about_area{background-color:#f7f2eb;padding:100px 0}
+#about_area>div{max-width:1200px;margin:0 auto;padding:0 60px}
+#about_area .flex{display:flex;align-items:center;justify-content:center}
+#about_area .flex img{width:420px;max-width:100%;height:auto;box-sizing:border-box;border-radius:30px;border:solid 4px #b7ce0f}
+#about_area .flex div{max-width:500px;padding:0 0 0 50px}
+#about_area .flex p{margin:0 0 1.2em;font-size:16px;text-align:justify}
+#about_area .flex p:last-child{margin:0}
+
+/* consult (サイトの #home_care_area ul 相当) */
+#consult_area{max-width:1200px;margin:0 auto;padding:250px 60px 0}
+#consult_area h3{text-align:center;margin:0 0 40px;font-size:24px;color:#222}
+#consult_area .lead{max-width:800px;margin:0 auto 60px;text-align:center;font-size:16px;color:#dd58a1}
+#consult_area ul{margin:0;padding:0;list-style-type:none;display:flex;flex-wrap:wrap;text-align:center;font-size:16px}
+#consult_area ul li{box-sizing:border-box;width:50%;padding:0 20px 40px}
+#consult_area ul li div{height:100%;box-sizing:border-box;padding:40px 30px;border-radius:30px;border:solid 4px #b7ce0f;background:#fff}
+#consult_area ul li:nth-of-type(2) div,#consult_area ul li:nth-of-type(4) div{border-color:#dd58a1}
+#consult_area ul li strong{display:block;margin:0 0 20px;font-size:24px;font-weight:600;color:#b7ce0f}
+#consult_area ul li:nth-of-type(2) strong,#consult_area ul li:nth-of-type(4) strong{color:#dd58a1}
+#consult_area ul li p{margin:0;line-height:1.7}
+#consult_area .link{margin:20px 0 0;text-align:center;font-size:16px;font-weight:600;line-height:1.7}
+#consult_area .link span{color:#dd58a1}
+
+/* access */
+#access_area{max-width:1200px;margin:0 auto;padding:250px 60px 0}
+#access_area>div{display:flex;align-items:center;justify-content:center}
+#access_area p{margin:0;font-size:16px;line-height:1.8;text-align:center}
+#access_area p span{display:block;font-weight:500;color:#b7ce0f;font-size:24px;margin:0 0 35px}
+
+/* footer */
+body>footer{font-size:16px;text-align:center}
+#footer_contact_area{margin:200px auto 0;background-color:#f2ece3;padding:70px 20px 50px}
+#footer_contact_area h2{margin:0 0 20px;font-size:24px;color:#b7ce0f}
+#footer_contact_area address{font-style:normal}
+#footer_contact_area address a{
+	display:inline-block;margin:0 0 10px;padding:0 5px;font-size:38px;font-weight:400;line-height:1;color:#b7ce0f;
+	background:linear-gradient(transparent 65%,#fdce5a 65%);
+}
+#footer_contact_area address p{margin:0;line-height:1.8}
+#footer_contact_area address p.accent{margin:20px 0 0;font-size:20px;color:#f2c433;font-weight:600}
+#footer_tanagokoro_area{padding:50px 60px 30px;font-size:20px;color:#fff;background-color:#b7ce0f}
+#footer_tanagokoro_area img{width:110px}
+#footer_tanagokoro_area p{margin:10px 0 0}
+#footer_itohei_area{padding:40px 60px 10px;font-size:14px}
+#footer_itohei_area img{width:80px}
+#footer_itohei_area span{display:block;color:#5e8dc7}
+#footer_itohei_area p{margin:1em 0}
+#footer_itohei_area a{display:inline-block;margin:10px 0}
+#footer_copyright_area{padding:20px 20px 30px;background-color:#5e8dc7}
+#footer_copyright_area small{display:block;font-family:Verdana,sans-serif;font-size:10px;color:#fff}
+
+/* ---- ブレイクポイント(サイトと同値) ---- */
+@media only screen and (max-width:1300px){
+	#home_key_area div p{font-size:24px;margin:0 0 10px}
+}
+@media only screen and (max-width:1100px){
+	#home_key_area{flex-direction:column;padding:0 20px 70px;position:relative}
+	#home_key_area img{width:100%}
+	#home_key_area div{width:auto;padding:0;position:absolute;bottom:25%;right:20px}
+}
+@media only screen and (max-width:767px){
+	br.sp{display:block}
+	br.pc{display:none}
+	body>header{height:65px;margin:0 0 20px}
+	body>header h1{top:5px;left:10px}
+	body>header h1 p{font-size:16px}
+	body>header h1 span{font-size:9px}
+	body>header h1 img{width:60px}
+	body>header nav{display:none}
+	#home_key_area div{bottom:15%}
+	#home_intro_area{padding:0 40px 100px}
+	#home_intro_area p{font-size:15px}
+	h2.ttl{font-size:25px}
+	#about_area{padding:100px 0}
+	#about_area>div{padding:0 20px}
+	#about_area .flex{flex-direction:column}
+	#about_area .flex div{padding:50px 0 0;max-width:none}
+	#about_area .flex p{font-size:15px}
+	#consult_area{padding:100px 20px 0}
+	#consult_area h3{font-size:20px}
+	#consult_area .lead,#consult_area ul{font-size:15px}
+	#consult_area ul li{width:100%;padding:0 0 40px}
+	#consult_area ul li strong{font-size:20px}
+	#access_area{padding:150px 20px 0}
+	#access_area p{font-size:15px}
+	#access_area p span{font-size:20px}
+	body>footer{font-size:15px}
+	#footer_contact_area{margin:150px auto 0}
+	#footer_contact_area h2{font-size:20px}
+	#footer_tanagokoro_area{font-size:16px}
+	#footer_itohei_area span{font-size:14px}
+}
+@media only screen and (max-width:500px){
+	#home_key_area{position:static}
+	#home_key_area div{position:static;margin:10px auto 0}
+	#home_key_area div p{font-size:18px;margin:0 0 10px}
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1><img src="./img/logo.svg" alt="">
+			<p><span>内閣府認証 特定非営利活動法人 さかえ会</span><br>たなごころ<br>相談支援事業所</p>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="#about_area">事業所案内</a></li>
+				<li><a href="#consult_area">ご相談内容</a></li>
+				<li><a href="#footer_contact_area">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article id="home_key_area">
+		<img src="./img/key.png" alt="「地域で暮らす」を一緒に支える相談支援">
+		<div>
+			<p>「地域で暮らす」を</p>
+			<p>一緒に支える相談支援</p>
+		</div>
+	</article>
+
+	<article id="home_intro_area">
+		<p>暮らしの困りごとに寄り添い、<br class="sp">必要な支援につなげます。</p>
+	</article>
+
+	<article id="about_area">
+		<div>
+			<h2 class="ttl"><span>About</span>事業所案内</h2>
+			<div class="flex">
+				<img src="./img/office.png" alt="たなごころ訪問看護ステーション・相談支援事業所の外観">
+				<div>
+					<p>令和8年4月に開設した、地域に根ざした相談支援事業所です。訪問看護ステーションと併設し、福祉・医療の両面から一人ひとりに寄りそった支援を行います。</p>
+					<p>わたしたちの「たなごころ」で、住み慣れた地域で安心して生活できるよう関係機関や社会資源とつながりながら、生活全体をサポートします。</p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<article id="consult_area">
+		<h2 class="ttl"><span>Consultation</span>ご相談内容</h2>
+		<h3>こんな時に、ご相談ください</h3>
+		<p class="lead">障がいのある方や、そのご家族からのご相談を受け付けています</p>
+		<ul>
+			<li><div><strong>暮らしのこと</strong><p>生活の中の「どうしよう？」を<br class="pc">一緒に整理します。</p></div></li>
+			<li><div><strong>福祉サービスのこと</strong><p>利用できるサービスを知りたい、<br class="pc">選びたい時に。</p></div></li>
+			<li><div><strong>地域とつながりたい</strong><p>地域作業所など、日中の居場所や<br class="pc">通い先を探したい時に。</p></div></li>
+			<li><div><strong>計画をつくりたい</strong><p>サービス等利用計画の作成や<br class="pc">見直しをお手伝いします。</p></div></li>
+		</ul>
+		<p class="link"><span>★つなぐ・調整する</span>　|　医療・福祉・地域の関係機関と連携し、<br class="sp">必要な支援につなぎます。</p>
+	</article>
+
+	<article id="access_area">
+		<h2 class="ttl"><span>Access</span>お問い合わせ・アクセス</h2>
+		<div>
+			<p><span>たなごころ相談支援事業所</span>
+			〒236-0053 神奈川県横浜市金沢区能見台通34-4　いづみビル1F<br>
+			京急能見台駅より徒歩7分<br>
+			受付 10:00～16:00　定休日 月・土・日・祝日</p>
+		</div>
+	</article>
+
+	<footer>
+		<div id="footer_contact_area">
+			<h2>お電話でのご相談・お問い合わせ</h2>
+			<address>
+				<a href="tel:0457905672">045-790-5668</a>
+				<p>受付時間　10:00 ～ 16:00　／　定休日　月・土・日・祝日</p>
+				<p class="accent">「こんなこと相談していいのかな？」も大歓迎です。</p>
+				<p>一人で抱え込まず、まずはご相談ください。<br>わたしたちの「たなごころ」で、あなたの地域での暮らしを一緒に考えます。</p>
+			</address>
+		</div>
+		<div id="footer_tanagokoro_area">
+			<img src="./img/logo_footer.svg" alt="たなごころ相談支援事業所">
+			<p>訪問看護ステーションと連携し、<br class="sp">生活全体をサポートします。</p>
+		</div>
+		<div id="footer_itohei_area">
+			<p>たなごころ訪問看護ステーション代表理事の関連会社</p>
+			<a href="https://itohei.jp/"><img src="./img/logo_itohei.svg" alt="有限会社糸平"><span>地域に根ざして100年</span></a>
+			<p>不用品処理の有限会社糸平と密な連携を持ち、広がりのあるサービスのためのネットワークを広げています。</p>
+		</div>
+		<div id="footer_copyright_area">
+			<small>&copy;2026 Tanagokoro Consultation Support Office All Rights Reserved.</small>
+		</div>
+	</footer>
+</body>
+</html>
